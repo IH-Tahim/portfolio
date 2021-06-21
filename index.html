@@ -5,6 +5,8 @@
   <meta charset="utf-8">
   <title>Personal Portfolio Website</title>
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <!-- Contact Form (pageclip) -->
+  <link rel="stylesheet" type="text/css" href="https://s.pageclip.co/v1/pageclip.css" media="screen">
   <!-- font awesome -->
   <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
   <!--color CSS-->
@@ -874,28 +876,28 @@
       </div>
       <div class="row">
         <div class="contact-form">
-          <form action="">
+          <form action="https://send.pageclip.co/JMdY5JXYEd3reQvMGic6SGazknHpddTL/ContactForm" class="pageclip-form" method="post">
             <div class="row">
               <div class="w-50">
                 <div class="input-group  outer-shadow hover-in-shadow">
-                  <input type="text" class="input-control" placeholder="Name">
+                  <input type="text" name="name" class="input-control" placeholder="Name" required>
                 </div>
                 <div class="input-group  outer-shadow hover-in-shadow">
-                  <input type="text" class="input-control" placeholder="Email">
+                  <input type="email" name="email" class="input-control" placeholder="Email" required>
                 </div>
                 <div class="input-group  outer-shadow hover-in-shadow">
-                  <input type="text" class="input-control" placeholder="Subject">
+                  <input type="text" name="subject" class="input-control" placeholder="Subject" required>
                 </div>
               </div>
               <div class="w-50">
                 <div class="input-group outer-shadow hover-in-shadow">
-                  <textarea class="input-control" placeholder="Message"></textarea>
+                  <textarea name="body" class="input-control" placeholder="Message" required></textarea>
                 </div>
               </div>
             </div>
             <div class="row">
               <div class="submit-btn no-select">
-                <button class="btn-1 outer-shadow hover-in-shadow" type="submit">Send Message</button>
+                <button class="btn-1 outer-shadow hover-in-shadow pageclip-form__submit" type="submit"><span>Send Message</span></button>
               </div>
             </div>
           </form>
@@ -985,6 +987,8 @@
   <script src="js/main.js"></script>
   <!-- style switcher js -->
   <script src="js/style-switcher.js"></script>
+  <!-- Contact Form JS -->
+  <script src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8"></script>
 </body>
 
 </html>
